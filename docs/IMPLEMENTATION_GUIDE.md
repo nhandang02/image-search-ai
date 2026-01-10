@@ -10,6 +10,9 @@ The service leverage FastAPI to expose CLIP model capabilities.
 - **Resolution**: 224x224 pixels
 
 ### Processing Pipeline
+
+![Processing Pipeline](../assets/diagrams/flow_chart.png)
+
 1. **Validation**: Input is validated using Pydantic schemas.
 2. **Decoding**: Base64 strings are converted to binary image data.
 3. **Preprocessing**: Images are converted to RGB and normalized using CLIP-specific mean and standard deviation.
